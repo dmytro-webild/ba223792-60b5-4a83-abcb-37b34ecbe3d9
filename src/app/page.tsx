@@ -13,7 +13,7 @@ import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import TeamCardOne from '@/components/sections/team/TeamCardOne';
+import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import { Sparkles, Star } from "lucide-react";
 
 export default function LandingPage() {
@@ -146,7 +146,7 @@ export default function LandingPage() {
   </div>
 
   <div id="team" data-section="team">
-      <TeamCardOne
+      <TeamCardSix
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="three-columns-all-equal-width"
