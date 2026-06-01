@@ -6,14 +6,14 @@ import ContactText from '@/components/sections/contact/ContactText';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';
+import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import { Sparkles } from "lucide-react";
+import { Sparkles, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -57,48 +57,27 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroOverlayTestimonial
+      <HeroSplitDualMedia
       title="Donnez Vie à Vos Idées avec une Qualité d'Impression Inégalée"
       description="De l'idée à la réalité, nous donnons vie à vos projets avec une qualité et un savoir-faire inégalés. Obtenez des résultats exceptionnels, à chaque fois."
-      testimonials={[
-        {
-          name: "Sophie Dubois",          handle: "@SophieD",          testimonial: "La Maison d'Imprimeur a transformé nos concepts en produits magnifiques. Leur professionnalisme et leur souci du détail sont incomparables.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-businesswoman-prepared-meeting_1098-2188.jpg"},
-        {
-          name: "Marc Lavoie",          handle: "@MarcL",          testimonial: "Un service rapide et une qualité d'impression irréprochable. Nous recommandons vivement Maison d'Imprimeur pour tous vos besoins.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/positive-confident-businessman-posing-outside_74855-1183.jpg"},
-        {
-          name: "Émilie Leclerc",          handle: "@EmilieL",          testimonial: "Grâce à eux, nos brochures n'ont jamais été aussi belles. L'équipe est à l'écoute et très réactive.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-smiling-hipster-man-drinking-coffee-city-cafe-lunch-time-with-notebook-suit_158538-8004.jpg"},
-        {
-          name: "David Rousseau",          handle: "@DavidR",          testimonial: "Pour nos cartes de visite personnalisées, la qualité était au rendez-vous. Excellent rapport qualité-prix.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/smiling-mature-businessman-using-digital-tablet-caf_23-2147955292.jpg"},
-        {
-          name: "Chloé Petit",          handle: "@ChloeP",          testimonial: "Ils ont su gérer notre commande complexe avec brio. La communication est fluide et les délais respectés.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/picture-business-woman-looking-camera_197531-33879.jpg"},
-      ]}
+      tag="Impression sur Mesure"
       buttons={[
         {
           text: "Découvrir nos Services",          href: "#services"},
         {
           text: "Demander un Devis",          href: "#contact"},
       ]}
-      avatars={[
+      mediaItems={[
         {
-          src: "http://img.b2bpic.net/free-photo/portrait-young-woman-with-long-brown-hair-black-t-shirt-white-jacket_613910-8245.jpg",          alt: "Sophie Dubois"},
+          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-paint-cans-with-paint_23-2148591312.jpg",          imageAlt: "Atelier d'impression moderne"},
         {
-          src: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1602.jpg",          alt: "Marc Lavoie"},
-        {
-          src: "http://img.b2bpic.net/free-photo/charming-pleased-satisfied-amused-male-with-beard-glasses-black-beanie-smiling-joyfully-showing-thumbs-up-like-gesture_176420-23561.jpg",          alt: "Émilie Leclerc"},
-        {
-          src: "http://img.b2bpic.net/free-photo/young-handsome-man-beige-turtleneck-smiling-broadly-showing-teeth_141793-55127.jpg",          alt: "David Rousseau"},
-        {
-          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Dwf7EzUzVwGcNnRSm1lnBuhn2w/uploaded-1780312493312-pshenlm3.jpg",          alt: "Chloé Petit"},
+          imageSrc: "http://img.b2bpic.net/free-photo/young-businesswoman-prepared-meeting_1098-2188.jpg",          imageAlt: "Businesswoman in meeting"},
       ]}
-      avatarText="Rejoignez nos clients satisfaits!"
-      imageSrc="http://img.b2bpic.net/free-photo/high-angle-paint-cans-with-paint_23-2148591312.jpg"
-      imageAlt="Atelier d'impression moderne"
-      showBlur={true}
+      mediaAnimation="slide-up"
+      background={{
+        variant: "plain"}}
+      rating={5}
+      ratingText="Basé sur +100 avis 5 étoiles"
     />
   </div>
 
