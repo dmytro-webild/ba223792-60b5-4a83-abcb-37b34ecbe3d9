@@ -6,6 +6,7 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Inter_Tight } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 
 
@@ -40,8 +41,9 @@ export const metadata: Metadata = {
   },
 };
 
-const interTight = Inter_Tight({
-  variable: "--font-inter-tight",
+
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
@@ -54,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${interTight.variable} antialiased`}>
+        <body className={`${poppins.variable} antialiased`}>
           
           {children}
           <script
