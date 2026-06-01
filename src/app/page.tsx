@@ -13,6 +13,7 @@ import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
+import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import { Sparkles, Star } from "lucide-react";
 
 export default function LandingPage() {
@@ -41,6 +42,8 @@ export default function LandingPage() {
           name: "Services",          id: "#services"},
         {
           name: "Produits",          id: "#products"},
+        {
+          name: "Équipe",          id: "#team"},
         {
           name: "Tarifs",          id: "#pricing"},
         {
@@ -139,6 +142,25 @@ export default function LandingPage() {
       ]}
       title="Explorez Notre Gamme de Produits Imprimés"
       description="Des cartes de visite élégantes aux brochures percutantes, trouvez le support idéal pour communiquer votre message."
+    />
+  </div>
+
+  <div id="team" data-section="team">
+      <TeamCardOne
+      animationType="slide-up"
+      textboxLayout="default"
+      gridVariant="three-columns-all-equal-width"
+      useInvertedBackground={false}
+      title="Rencontrez Notre Équipe d'Experts"
+      description="Une équipe passionnée et dévouée à l'excellence de vos projets d'impression."
+      members={[
+        {
+          id: "m-1",          name: "Marc Dubois",          role: "Directeur Général",          imageSrc: "http://img.b2bpic.net/free-photo/handsome-bearded-man-touching-chin-looking-front_176474-32530.jpg"},
+        {
+          id: "m-2",          name: "Sophie Martin",          role: "Directrice Artistique",          imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-woman-pink-blouse-eyeglasses_176474-14283.jpg"},
+        {
+          id: "m-3",          name: "David Laurent",          role: "Chef de Production",          imageSrc: "http://img.b2bpic.net/free-photo/young-man-wearing-glasses-casual-t-shirt_176474-14986.jpg"},
+      ]}
     />
   </div>
 
