@@ -62,7 +62,7 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroSplitDualMedia
       title="Donnez Vie à Vos Idées avec une Qualité d'Impression Inégalée"
-      description="De l'idée à la réalité, nous donnons vie à vos projets avec une qualité et un savoir-faire inégalés. Obtenez des résultats exceptionnels, à chaque fois."
+      description="Nous transformons vos visions créatives en réalités tangibles grâce à des techniques d'impression de pointe et un engagement inébranlable envers l'excellence. Chaque projet est une œuvre d'art, méticuleusement conçue et exécutée pour captiver votre public et laisser une impression durable."
       tag="Impression sur Mesure"
       buttons={[
         {
