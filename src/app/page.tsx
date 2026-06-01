@@ -58,7 +58,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroOverlayTestimonial
-      title="Votre Partenaire d'Impression de Confiance"
+      title="Donnez Vie à Vos Idées avec une Qualité d'Impression Inégalée"
       description="De l'idée à la réalité, nous donnons vie à vos projets avec une qualité et un savoir-faire inégalés. Obtenez des résultats exceptionnels, à chaque fois."
       testimonials={[
         {
