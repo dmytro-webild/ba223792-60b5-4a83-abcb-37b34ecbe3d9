@@ -12,7 +12,7 @@ import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
+import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import { Sparkles, Star } from "lucide-react";
 
@@ -78,17 +78,22 @@ export default function LandingPage() {
   </div>
 
   <div id="about" data-section="about">
-      <TextSplitAbout
+      <MetricSplitMediaAbout
       useInvertedBackground={true}
       title="À Propos de Notre Imprimerie"
-      description={[
-        "Depuis plus de 20 ans, Maison d'Imprimeur est le leader de l'impression sur mesure. Nous combinons tradition et innovation pour des résultats exceptionnels.",        "Notre équipe d'experts est dédiée à la réalisation de vos visions, avec un service client personnalisé et une attention méticuleuse aux détails. Nous nous engageons à offrir des solutions d'impression écologiques et durables."]}
-      buttons={[
+      description="Depuis plus de 20 ans, Maison d'Imprimeur est le leader de l'impression sur mesure. Nous combinons tradition et innovation pour des résultats exceptionnels. Notre équipe d'experts est dédiée à la réalisation de vos visions, avec un service client personnalisé et une attention méticuleuse aux détails. Nous nous engageons à offrir des solutions d'impression écologiques et durables."
+      metrics={[
         {
-          text: "Notre Histoire",          href: "#"},
+          value: "20+",          title: "Années d'Expérience"},
         {
-          text: "Nos Valeurs",          href: "#"},
+          value: "10K+",          title: "Projets Réalisés"},
+        {
+          value: "98%",          title: "Satisfaction Client"},
       ]}
+      mediaAnimation="slide-up"
+      metricsAnimation="slide-up"
+      imageSrc="http://img.b2bpic.net/free-photo/industrial-printing-machine_23-2151675276.jpg"
+      imageAlt="Machine d'impression industrielle"
     />
   </div>
 
