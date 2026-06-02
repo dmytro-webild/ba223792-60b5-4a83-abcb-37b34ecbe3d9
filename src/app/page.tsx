@@ -67,7 +67,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroBillboardScroll
-      title="Donnez Vie à Vos Idées avec une Qualité d'Impression Inégalée"
+      title="Vos Idées Imprimées. Qualité Inégalée. Zéro Souci."
       description="Nous transformons vos visions créatives en réalités tangibles grâce à des techniques d'impression de pointe et un engagement inébranlable envers l'excellence. Chaque projet est une œuvre d'art, méticuleusement conçue et exécutée pour captiver votre public et laisser une impression durable."
       tag="Impression sur Mesure"
       buttons={[
