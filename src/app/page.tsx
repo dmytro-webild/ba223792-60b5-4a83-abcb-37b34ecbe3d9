@@ -46,6 +46,7 @@ export default function LandingPage() {
         {
           name: "Démarche Détaillée",          id: "#detailed-steps"},
         {
+          name: "Nouvelles Fonctionnalités",          id: "#features-timeline-cards"},        {
           name: "Produits",          id: "#products"},
         {
           name: "Équipe",          id: "#team"},
@@ -206,6 +207,42 @@ export default function LandingPage() {
             { label: "Suivi Clientèle", detail: "Support après-vente et satisfaction." }
           ],
           completedLabel: "Projet Livré"
+        }
+      ]}
+    />
+  </div>
+
+  <div id="features-timeline-cards" data-section="features-timeline-cards">
+    <FeatureBento
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={true}
+      title="Nos Prochaines Innovations et Fonctionnalités"
+      description="Découvrez la feuille de route de Maison d'Imprimeur et les nouvelles fonctionnalités que nous développerons pour vous."
+      features={[
+        {
+          title: "Intégration IA pour le Design",          description: "Automatisation de la mise en page et suggestions créatives.",          bentoComponent: "timeline",          heading: "Développement IA",          subheading: "Optimisation de votre processus de création.",          items: [
+            { label: "Recherche & Développement", detail: "Exploration des modèles d'AI pour le design." },
+            { label: "Tests Alpha", detail: "Intégration avec nos outils de conception." },
+            { label: "Lancement Beta", detail: "Mise à disposition pour les utilisateurs test." }
+          ],
+          completedLabel: "Bientôt Disponible"
+        },
+        {
+          title: "Suivi de Production en Temps Réel",          description: "Visualisez l'état de votre commande à chaque étape du processus.",          bentoComponent: "timeline",          heading: "Transparence Accrue",          subheading: "Gardez le contrôle sur votre projet.",          items: [
+            { label: "Conception du Tableau de Bord", detail: "Développement de l'interface utilisateur." },
+            { label: "Intégration des Capteurs", detail: "Connexion aux machines d'impression." },
+            { label: "Déploiement", detail: "Accessible via votre espace client." }
+          ],
+          completedLabel: "En Cours"
+        },
+        {
+          title: "Nouvelles Options de Matériaux Écologiques",          description: "Élargissement de notre gamme de papiers recyclés et encres végétales.",          bentoComponent: "timeline",          heading: "Engagement Durable",          subheading: "Pour une impression plus respectueuse de l'environnement.",          items: [
+            { label: "Sélection des Fournisseurs", detail: "Recherche de partenaires certifiés écologiques." },
+            { label: "Tests de Qualité", detail: "Assurance des standards d'impression." },
+            { label: "Mise à Disposition", detail: "Ajout des options au catalogue." }
+          ],
+          completedLabel: "Prévu Q3 2024"
         }
       ]}
     />
