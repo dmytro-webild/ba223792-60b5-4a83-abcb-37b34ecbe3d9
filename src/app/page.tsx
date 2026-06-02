@@ -14,7 +14,8 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
-import { Sparkles, Star } from "lucide-react";
+import FeatureBento from '@/components/sections/feature/FeatureBento';
+import { Sparkles, Star, CheckCircle, Clock, Award } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -40,6 +41,8 @@ export default function LandingPage() {
           name: "À Propos",          id: "#about"},
         {
           name: "Services",          id: "#services"},
+        {
+          name: "Timeline",          id: "#timeline-features"},
         {
           name: "Produits",          id: "#products"},
         {
@@ -115,6 +118,50 @@ export default function LandingPage() {
       ]}
       title="Nos Services d'Impression Complète"
       description="Découvrez notre large gamme de services, conçus pour répondre à tous vos besoins, des petites aux grandes productions."
+    />
+  </div>
+
+  <div id="timeline-features" data-section="timeline-features">
+    <FeatureBento
+      animationType="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={true}
+      title="Notre Processus Simple et Efficace"
+      description="Du concept à la livraison, suivez les étapes de votre projet avec Maison d'Imprimeur."
+      features={[
+        {
+          title: "Conception Initial",          description: "Nous écoutons vos idées et vos besoins pour une première esquisse.",          bentoComponent: "timeline",          heading: "Phase 1: Idéation",          subheading: "Votre vision prend forme.",          items: [
+            { label: "Brief Client", detail: "Discussion approfondie des besoins" },
+            { label: "Proposition de Design", detail: "Création des premières maquettes" },
+            { label: "Validation du Concept", detail: "Approbation du design final" }
+          ],
+          completedLabel: "Concept Validé"
+        },
+        {
+          title: "Préparation à l'Impression",          description: "Optimisation des fichiers pour une qualité maximale.",          bentoComponent: "timeline",          heading: "Phase 2: Pré-presse",          subheading: "La précision avant tout.",          items: [
+            { label: "Vérification des Fichiers", detail: "Contrôle technique des documents" },
+            { label: "Étalonnage des Couleurs", detail: "Garantie de fidélité colorimétrique" },
+            { label: "Bon à Tirer (BAT)", detail: "Dernière validation avant production" }
+          ],
+          completedLabel: "BAT Approuvé"
+        },
+        {
+          title: "Production et Finition",          description: "Impression et finitions pour un résultat impeccable.",          bentoComponent: "timeline",          heading: "Phase 3: Production",          subheading: "L'art de l'impression.",          items: [
+            { label: "Impression", detail: "Utilisation de technologies offset ou numérique" },
+            { label: "Finition", detail: "Découpe, pelliculage, gaufrage, etc." },
+            { label: "Contrôle Qualité", detail: "Inspection rigoureuse de chaque pièce" }
+          ],
+          completedLabel: "Prêt à l'Expédition"
+        },
+        {
+          title: "Livraison et Suivi",          description: "Votre commande livrée en temps et en heure.",          bentoComponent: "timeline",          heading: "Phase 4: Livraison",          subheading: "Le succès à votre porte.",          items: [
+            { label: "Emballage Sécurisé", detail: "Protection optimale de vos imprimés" },
+            { label: "Expédition", detail: "Livraison rapide et fiable" },
+            { label: "Satisfaction Client", detail: "Assistance après-vente" }
+          ],
+          completedLabel: "Projet Terminé"
+        }
+      ]}
     />
   </div>
 
@@ -298,6 +345,8 @@ export default function LandingPage() {
           title: "Entreprise",          items: [
             {
               label: "À Propos",              href: "#about"},
+            {
+              label: "Timeline",              href: "#timeline-features"},
             {
               label: "Produits",              href: "#products"},
             {
