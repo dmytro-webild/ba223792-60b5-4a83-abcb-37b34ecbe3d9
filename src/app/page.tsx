@@ -42,11 +42,10 @@ export default function LandingPage() {
         {
           name: "Services",          id: "#services"},
         {
-          name: "Timeline",          id: "#timeline-features"},
+          name: "Parcours Client",          id: "#timeline-features"},
         {
-          name: "Démarche Détaillée",          id: "#detailed-steps"},
+          name: "Nouvelles Fonctionnalités",          id: "#features-timeline-cards"},
         {
-          name: "Nouvelles Fonctionnalités",          id: "#features-timeline-cards"},        {
           name: "Produits",          id: "#products"},
         {
           name: "Équipe",          id: "#team"},
@@ -129,84 +128,40 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={true}
-      title="Notre Processus Simple et Efficace"
-      description="Du concept à la livraison, suivez les étapes de votre projet avec Maison d'Imprimeur."
+      title="Notre Parcours Client : De l'Idée à la Réalisation"
+      description="Découvrez notre démarche complète, de la consultation initiale à la livraison finale, pour un projet d'impression fluide et réussi. Chaque étape est pensée pour garantir qualité et satisfaction."
       features={[
         {
-          title: "Conception Initial",          description: "Nous écoutons vos idées et vos besoins pour une première esquisse.",          bentoComponent: "timeline",          heading: "Phase 1: Idéation",          subheading: "Votre vision prend forme.",          items: [
-            { label: "Brief Client", detail: "Discussion approfondie des besoins" },
-            { label: "Proposition de Design", detail: "Création des premières maquettes" },
-            { label: "Validation du Concept", detail: "Approbation du design final" }
-          ],
-          completedLabel: "Concept Validé"
-        },
-        {
-          title: "Préparation à l'Impression",          description: "Optimisation des fichiers pour une qualité maximale.",          bentoComponent: "timeline",          heading: "Phase 2: Pré-presse",          subheading: "La précision avant tout.",          items: [
-            { label: "Vérification des Fichiers", detail: "Contrôle technique des documents" },
-            { label: "Étalonnage des Couleurs", detail: "Garantie de fidélité colorimétrique" },
-            { label: "Bon à Tirer (BAT)", detail: "Dernière validation avant production" }
-          ],
-          completedLabel: "BAT Approuvé"
-        },
-        {
-          title: "Production et Finition",          description: "Impression et finitions pour un résultat impeccable.",          bentoComponent: "timeline",          heading: "Phase 3: Production",          subheading: "L'art de l'impression.",          items: [
-            { label: "Impression", detail: "Utilisation de technologies offset ou numérique" },
-            { label: "Finition", detail: "Découpe, pelliculage, gaufrage, etc." },
-            { label: "Contrôle Qualité", detail: "Inspection rigoureuse de chaque pièce" }
-          ],
-          completedLabel: "Prêt à l'Expédition"
-        },
-        {
-          title: "Livraison et Suivi",          description: "Votre commande livrée en temps et en heure.",          bentoComponent: "timeline",          heading: "Phase 4: Livraison",          subheading: "Le succès à votre porte.",          items: [
-            { label: "Emballage Sécurisé", detail: "Protection optimale de vos imprimés" },
-            { label: "Expédition", detail: "Livraison rapide et fiable" },
-            { label: "Satisfaction Client", detail: "Assistance après-vente" }
-          ],
-          completedLabel: "Projet Terminé"
-        }
-      ]}
-    />
-  </div>
-
-  <div id="detailed-steps" data-section="detailed-steps">
-    <FeatureBento
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
-      title="Comment Nous Procédons : Les Étapes Détaillées"
-      description="Découvrez en profondeur chaque phase de notre collaboration, de la première idée à la livraison finale de votre projet d'impression."
-      features={[
-        {
-          title: "Consultation & Stratégie",          description: "Nous commençons par une écoute attentive de vos objectifs, suivi d'une analyse pour définir la stratégie d'impression la plus adaptée.",          bentoComponent: "timeline",          heading: "Phase 1: Définition du Projet",          subheading: "Vos besoins, notre expertise.",          items: [
-            { label: "Analyse des Besoins", detail: "Comprendre votre marché et vos cibles." },
-            { label: "Conseil Expert", detail: "Propositions de matériaux et techniques." },
-            { label: "Planification Stratégique", detail: "Élaboration d'un calendrier et budget." }
+          title: "Consultation & Stratégie Personnalisée",          description: "De l'analyse de vos besoins à l'élaboration d'une stratégie d'impression sur mesure, nous sommes à vos côtés.",          bentoComponent: "timeline",          heading: "Phase 1: Idéation & Planification",          subheading: "Votre vision prend forme avec notre expertise.",          items: [
+            { label: "Brief Client & Analyse des Besoins", detail: "Discussion approfondie et compréhension de vos objectifs." },
+            { label: "Proposition de Design & Conseil Expert", detail: "Création des premières maquettes et recommandations de nos spécialistes." },
+            { label: "Validation du Concept & Planification Stratégique", detail: "Approbation finale du design et établissement d'un calendrier précis." }
           ],
           completedLabel: "Stratégie Validée"
         },
         {
-          title: "Design & Conception",          description: "Nos designers transforment vos concepts en visuels percutants, en assurant une cohérence avec votre identité de marque.",          bentoComponent: "timeline",          heading: "Phase 2: Création Visuelle",          subheading: "L'art de la mise en page.",          items: [
-            { label: "Création Graphique", detail: "Développement des éléments visuels." },
-            { label: "Maquettes & Révisions", detail: "Présentation et ajustements du design." },
-            { label: "Validation Artistique", detail: "Approbation du rendu visuel final." }
+          title: "Design Graphique & Pré-presse Détaillée",          description: "Nos designers créent des visuels percutants, puis nos experts préparent vos fichiers pour une qualité d'impression optimale.",          bentoComponent: "timeline",          heading: "Phase 2: Création & Préparation",          subheading: "La précision avant l'impression.",          items: [
+            { label: "Création Graphique & Maquettes", detail: "Développement des éléments visuels et présentation des mockups." },
+            { label: "Validation Artistique & Bon à Tirer (BAT)", detail: "Approbation du rendu visuel et dernière vérification avant production." },
+            { label: "Vérification & Étalonnage des Fichiers", detail: "Contrôle technique des documents et garantie de fidélité colorimétrique." }
           ],
-          completedLabel: "Design Approuvé"
+          completedLabel: "Fichiers Prêts à Imprimer"
         },
         {
-          title: "Production & Qualité",          description: "Nos équipements de pointe et notre savoir-faire garantissent une impression de la plus haute qualité, avec des finitions impeccables.",          bentoComponent: "timeline",          heading: "Phase 3: Réalisation Impeccable",          subheading: "La précision à l'œuvre.",          items: [
-            { label: "Pré-presse Détaillée", detail: "Vérification et préparation des fichiers." },
-            { label: "Impression Avancée", detail: "Utilisation des technologies les plus récentes." },
-            { label: "Finitions & Contrôle", detail: "Découpe, assemblage et inspection finale." }
+          title: "Production Impeccable & Finitions",          description: "Avec des technologies de pointe et un contrôle qualité rigoureux, nous transformons vos designs en produits imprimés d'exception.",          bentoComponent: "timeline",          heading: "Phase 3: Réalisation & Qualité",          subheading: "L'art de l'impression à son apogée.",          items: [
+            { label: "Impression Offset & Numérique Avancée", detail: "Utilisation de technologies de pointe pour une exécution parfaite." },
+            { label: "Finition Spéciale & Assemblage", detail: "Découpe, pelliculage, gaufrage et toutes les options d'embellissement." },
+            { label: "Contrôle Qualité Rigoureux", detail: "Inspection minutieuse de chaque pièce pour assurer l'excellence." }
           ],
-          completedLabel: "Qualité Assurée"
+          completedLabel: "Produits Finis & Vérifiés"
         },
         {
-          title: "Livraison & Support",          description: "Votre commande est livrée en toute sécurité, et notre équipe reste disponible pour toute question post-production.",          bentoComponent: "timeline",          heading: "Phase 4: Succès Garanti",          subheading: "Votre projet, livré à temps.",          items: [
-            { label: "Emballage Soigné", detail: "Protection optimale des produits." },
-            { label: "Expédition Rapide", detail: "Logistique efficace pour une livraison ciblée." },
-            { label: "Suivi Clientèle", detail: "Support après-vente et satisfaction." }
+          title: "Livraison Sécurisée & Suivi Client",          description: "Votre commande est emballée avec soin et livrée rapidement, suivie d'un support client dédié pour une satisfaction totale.",          bentoComponent: "timeline",          heading: "Phase 4: Succès & Accompagnement",          subheading: "Votre projet, livré et soutenu.",          items: [
+            { label: "Emballage Sécurisé & Soigné", detail: "Protection optimale de vos imprimés pendant le transport." },
+            { label: "Expédition Rapide & Fiable", detail: "Logistique efficace pour une livraison ciblée et ponctuelle." },
+            { label: "Suivi Clientèle & Assistance Après-Vente", detail: "Notre équipe reste disponible pour toute question post-livraison." }
           ],
-          completedLabel: "Projet Livré"
+          completedLabel: "Projet Livré & Satisfait"
         }
       ]}
     />
@@ -429,7 +384,7 @@ export default function LandingPage() {
             {
               label: "À Propos",              href: "#about"},
             {
-              label: "Timeline",              href: "#timeline-features"},
+              label: "Parcours Client",              href: "#timeline-features"},
             {
               label: "Produits",              href: "#products"},
             {
