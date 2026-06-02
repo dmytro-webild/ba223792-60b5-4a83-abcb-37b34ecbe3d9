@@ -181,7 +181,7 @@ export default function LandingPage() {
             { label: "Conseil Expert", detail: "Propositions de matériaux et techniques." },
             { label: "Planification Stratégique", detail: "Élaboration d'un calendrier et budget." }
           ],
-          completedLabel: "Stratégie Validée",          icon: Clock
+          completedLabel: "Stratégie Validée"
         },
         {
           title: "Design & Conception",          description: "Nos designers transforment vos concepts en visuels percutants, en assurant une cohérence avec votre identité de marque.",          bentoComponent: "timeline",          heading: "Phase 2: Création Visuelle",          subheading: "L'art de la mise en page.",          items: [
@@ -189,7 +189,7 @@ export default function LandingPage() {
             { label: "Maquettes & Révisions", detail: "Présentation et ajustements du design." },
             { label: "Validation Artistique", detail: "Approbation du rendu visuel final." }
           ],
-          completedLabel: "Design Approuvé",          icon: Award
+          completedLabel: "Design Approuvé"
         },
         {
           title: "Production & Qualité",          description: "Nos équipements de pointe et notre savoir-faire garantissent une impression de la plus haute qualité, avec des finitions impeccables.",          bentoComponent: "timeline",          heading: "Phase 3: Réalisation Impeccable",          subheading: "La précision à l'œuvre.",          items: [
@@ -197,7 +197,7 @@ export default function LandingPage() {
             { label: "Impression Avancée", detail: "Utilisation des technologies les plus récentes." },
             { label: "Finitions & Contrôle", detail: "Découpe, assemblage et inspection finale." }
           ],
-          completedLabel: "Qualité Assurée",          icon: CheckCircle
+          completedLabel: "Qualité Assurée"
         },
         {
           title: "Livraison & Support",          description: "Votre commande est livrée en toute sécurité, et notre équipe reste disponible pour toute question post-production.",          bentoComponent: "timeline",          heading: "Phase 4: Succès Garanti",          subheading: "Votre projet, livré à temps.",          items: [
@@ -205,7 +205,7 @@ export default function LandingPage() {
             { label: "Expédition Rapide", detail: "Logistique efficace pour une livraison ciblée." },
             { label: "Suivi Clientèle", detail: "Support après-vente et satisfaction." }
           ],
-          completedLabel: "Projet Livré",          icon: Sparkles
+          completedLabel: "Projet Livré"
         }
       ]}
     />
