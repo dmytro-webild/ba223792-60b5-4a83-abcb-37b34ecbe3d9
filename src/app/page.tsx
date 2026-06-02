@@ -121,17 +121,17 @@ export default function LandingPage() {
       useInvertedBackground={true}
       products={[
         {
-          id: "p-1",          name: "Cartes de Visite Premium",          price: "À partir de 29€",          imageSrc: "http://img.b2bpic.net/free-psd/opulence-business-card-template-design_23-2152016131.jpg"},
+          id: "p-1",          name: "Cartes de Visite Premium",          price: "À partir de 29€",          imageSrc: "http://img.b2bpic.net/free-psd/opulence-business-card-template-design_23-2152016131.jpg",          priceButtonProps: { text: "Commander", href: "#contact" }},
         {
-          id: "p-2",          name: "Flyers Publicitaires",          price: "À partir de 49€",          imageSrc: "http://img.b2bpic.net/free-photo/clipboard-near-blurs-heaps-different-bright-dry-colors_23-2148016427.jpg"},
+          id: "p-2",          name: "Flyers Publicitaires",          price: "À partir de 49€",          imageSrc: "http://img.b2bpic.net/free-photo/clipboard-near-blurs-heaps-different-bright-dry-colors_23-2148016427.jpg",          priceButtonProps: { text: "Commander", href: "#contact" }},
         {
-          id: "p-3",          name: "Brochures Pliantes",          price: "À partir de 89€",          imageSrc: "http://img.b2bpic.net/free-vector/geometric-business-brochure-blue-tones_23-2147599337.jpg"},
+          id: "p-3",          name: "Brochures Pliantes",          price: "À partir de 89€",          imageSrc: "http://img.b2bpic.net/free-vector/geometric-business-brochure-blue-tones_23-2147599337.jpg",          priceButtonProps: { text: "Commander", href: "#contact" }},
         {
-          id: "p-4",          name: "Affiches Grand Format",          price: "À partir de 129€",          imageSrc: "http://img.b2bpic.net/free-photo/blank-white-advertisement-panel-city_23-2147845889.jpg"},
+          id: "p-4",          name: "Affiches Grand Format",          price: "À partir de 129€",          imageSrc: "http://img.b2bpic.net/free-photo/blank-white-advertisement-panel-city_23-2147845889.jpg",          priceButtonProps: { text: "Commander", href: "#contact" }},
         {
-          id: "p-5",          name: "Bannières et Roll-ups",          price: "À partir de 149€",          imageSrc: "http://img.b2bpic.net/free-psd/business-corporation-template-design_23-2151405481.jpg"},
+          id: "p-5",          name: "Bannières et Roll-ups",          price: "À partir de 149€",          imageSrc: "http://img.b2bpic.net/free-psd/business-corporation-template-design_23-2151405481.jpg",          priceButtonProps: { text: "Commander", href: "#contact" }},
         {
-          id: "p-6",          name: "Emballages Personnalisés",          price: "Sur devis",          imageSrc: "http://img.b2bpic.net/free-photo/top-view-woman-preparing-cyber-monday-package_23-2148675033.jpg"},
+          id: "p-6",          name: "Emballages Personnalisés",          price: "Sur devis",          imageSrc: "http://img.b2bpic.net/free-photo/top-view-woman-preparing-cyber-monday-package_23-2148675033.jpg",          priceButtonProps: { text: "Demander un Devis", href: "#contact" }},
       ]}
       title="Explorez Notre Gamme de Produits Imprimés"
       description="Des cartes de visite élégantes aux brochures percutantes, trouvez le support idéal pour communiquer votre message."
@@ -296,7 +296,8 @@ export default function LandingPage() {
             {
               label: "Produits",              href: "#products"},
             {
-              label: "Témoignages",              href: "#testimonials-section"},
+            "label": "Témoignages",              "href": "#testimonials-section"
+            },
             {
               label: "FAQ",              href: "#faq"},
           ],
