@@ -6,7 +6,7 @@ import ContactText from '@/components/sections/contact/ContactText';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
@@ -60,7 +60,7 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroSplitDualMedia
+      <HeroBillboardScroll
       title="Donnez Vie à Vos Idées avec une Qualité d'Impression Inégalée"
       description="Nous transformons vos visions créatives en réalités tangibles grâce à des techniques d'impression de pointe et un engagement inébranlable envers l'excellence. Chaque projet est une œuvre d'art, méticuleusement conçue et exécutée pour captiver votre public et laisser une impression durable."
       tag="Impression sur Mesure"
@@ -70,17 +70,10 @@ export default function LandingPage() {
         {
           text: "Demander un Devis",          href: "#contact"},
       ]}
-      mediaItems={[
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-paint-cans-with-paint_23-2148591312.jpg",          imageAlt: "Atelier d'impression moderne"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/young-businesswoman-prepared-meeting_1098-2188.jpg",          imageAlt: "Businesswoman in meeting"},
-      ]}
-      mediaAnimation="slide-up"
+      imageSrc="http://img.b2bpic.net/free-photo/high-angle-paint-cans-with-paint_23-2148591312.jpg"
+      imageAlt="Atelier d'impression moderne"
       background={{
         variant: "plain"}}
-      rating={5}
-      ratingText="Basé sur +100 avis 5 étoiles"
     />
   </div>
 
